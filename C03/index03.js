@@ -19,7 +19,7 @@ let a = 4;
         %  -> modulus (remainder)
         ++ -> increment (vrednosta na promenlivata ke se zgolemi za eden)
                         (add +1 on the value of the variable)
-        +- -> decrement (subtract -1 of the value of the variable)                
+        -- -> decrement (subtract -1 of the value of the variable)                
 */
 
 console.log(5 + 3);
@@ -137,9 +137,22 @@ console.log('x < 10 && y > 1 wit not operator', !(x < 10 || y > 1)); /* !(true i
 
 // Vidovi na logiranja (najcesto se koristat error i log)
 
-console.error('The user is not logged in'); /* () ja prikazuva porakata no kako greska */
-console.table(['apples', 'oranges', 'bananas']); /* podatocite gi pecati vo tabela */
+console.error('The user is not logged in!'); // outputs an error message  /* () ja prikazuva porakata no kako greska */
+console.table(['apples', 'oranges', 'bananas']); // displays data as a table /* podatocite gi pecati vo tabela */
 console.log(['apples', 'oranges', 'bananas']);
-let person
+let person = { name: 'Ivana', year: 2021 };
+console.dir(person);
+console.dir(location); // dislays interactive list of the properties of the specified object
+console.log(location);
+console.info('Semos course: JavaScript basics.');
 
+setTimeout(() => {
+    console.timeEnd('script');
+}, 5000);
 
+/*
+Homework 02
+1. Declare variables and use all the different operators that were shown ( print the results)
+2. Try out the different types of loggings in the console
+* Bonus: Try and find out new types of loggings in the console
+*/
