@@ -88,9 +88,24 @@ if(average < 60) {
 let day = 'Friday' ;
 
 switch(day) {
+    case 'Saturday' :
+        console.log('It is weekend');
+        break; 
     case 'Sunday' :
         console.log('It is weekend');
         break; 
+    case 'Monday' :
+        console.log('It is work day');
+        break;           
+    case 'Tuesday' :
+        console.log('It is work day');
+        break;           
+    case 'Wednesday' :
+        console.log('It is work day');
+        break;         
+    case 'Thursday' :
+        console.log('It is work day');
+        break;             
     case 'Friday' :
         console.log('It is work day');
         break;       
@@ -98,6 +113,24 @@ switch(day) {
         console.log('You have mistake :)');
 }
 
+
+let days = 'Sunday' ;
+
+switch(days) {
+    case 'Saturday' :
+    case 'Sunday' :
+        console.log('It is weekend');
+        break; 
+    case 'Monday' :
+    case 'Tuesday' :
+    case 'Wednesday' :
+    case 'Thursday' :
+    case 'Friday' :
+        console.log('It is work day');
+        break;       
+    default:      
+        console.log('You have mistake :)');
+}
 // 5
 
 // March = 3
