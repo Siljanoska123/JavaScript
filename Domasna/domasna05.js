@@ -66,15 +66,18 @@ people.forEach (person => {
     console.log(`${person.age}`);
 });
 
-// let sum = 0;
-// let sumAge = [person1.age, person2['age'], person3.age];
+let sumirano = 0;
+people.forEach (person => {
+    sumirano += person.age
+});
 
-// sumAge.forEach(person => {
-//     console.log(`${person.age}`);
+console.log('sumirano so forEach', sumirano);
 
-// });
-
-// NE ZNAM SO forEach :(
+/* let results = 0;
+people.forEach (sum => {
+    results += sum.age;
+});
+console.log('sum with forEach', results); */
 
 
 // 6
@@ -82,14 +85,14 @@ people.forEach (person => {
 let sum = people[0].age + people[1].age +  people[2].age
 console.log('sum years', sum);
 
-let average = sum / people.length
+let average = sum / people.length;
 
-console.log('average years', average)
+console.log('average years', average);
 
 
 
 // 7
-// pop method
+// pop method (go vadi posledniot element)
 
 let fruits = ['banana', 'orange', 'apple', 'mango'];
 console.log(fruits);
@@ -98,13 +101,13 @@ fruits.pop();
 
 console.log(fruits);
 
-// push method
+// push method (dodava nov element na krajot na nizata)
 
 fruits.push('kiwi');
 
 console.log(fruits);
 
-// map
+// map (ni ovozmozuva)
 
 let array = [2, 5, 7, 9];
 console.log('array', array);
@@ -113,7 +116,7 @@ let map = array.map(x => x * 2);
 
 console.log('array with map', map);
 
-// filter
+// filter (ja procistuvame nizata)
 
 let words = fruits.filter (fruit => fruit.length > 5 );
 
@@ -128,6 +131,30 @@ console.log('sort fruits', fruits);
 
 
 
+// filter so broevi (gi trgame licata sto se pod 18 podini)
+
+let ages = [32, 15, 33, 16, 40];
+
+console.log(ages);
+
+let result = ages.filter (age => {
+    if(age >18 ) {
+        return true;
+    } else {
+        return false
+    }
+
+});
+
+console.log(result);
 
 
+// sum na ages so forEach
 
+let zbir = 0;
+ages.forEach(age => {
+    // console.log(`${age}`);
+    zbir += age;
+});
+
+console.log(zbir);
