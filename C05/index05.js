@@ -108,7 +108,7 @@ console.log(cars);
 
 cars.forEach(car => {
     console.log(car.type);
-    console.log(car.type);
+    console.log(car.model);
 });
 
 // za da spoime vo edno
