@@ -56,7 +56,23 @@ let books = [
 ];
 
 let p = document.createElement ('p');
-p.innerHTML = books;
+p.innerHTML = books[0];
 console.log(p);
 
-// ne mi e bas jasno i ne znam dali e dobro sraboteno
+
+let p1 = document.createElement ('p1');
+p1.innerHTML = books[1];
+console.log(p1);
+
+
+let p2 = document.createElement ('p2');
+p2.innerHTML = books[2];
+console.log(p2);
+
+document.body.appendChild(p);
+document.body.appendChild(p1);
+document.body.appendChild(p2);
+
+// ne znam dali e dobro?!
+
+// 2
