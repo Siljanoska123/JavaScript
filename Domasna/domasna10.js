@@ -12,7 +12,7 @@ submit.addEventListener('click', weatherfunc=()=> {
 
                 
         city.innerHTML = cityValue;
-        temperatureValue.innerHTML = temperatureValue
+        tempValue.innerHTML = tempValue
         console.log(data);
 
     })
